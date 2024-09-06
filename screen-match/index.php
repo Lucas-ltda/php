@@ -1,6 +1,6 @@
 <?php
 require __DIR__. "/src/funcoes.php";
-echo "Bem vindo ao Screen Match!\n";
+echo "\nBem vindo ao Screen Match!\n";
 
 $nomeFilme = "Yuri";
 

@@ -1,4 +1,5 @@
 <?php
+require __DIR__. "/src/Modelo/Filme.php";
 require __DIR__. "/src/funcoes.php";
 echo "\nBem vindo ao Screen Match!\n";
 
@@ -52,16 +53,16 @@ $filme = criarFilme(
     nome : "Teste",
 );// com a utilização de parametros nomeados, não importa a ordem 
 
-echo $filme["ano"]. "\n";
+echo $filme -> ano. "\n";
 
 var_dump($notas);
 sort($notas);
 var_dump($notas);
 echo min($notas);
 echo "\n";
-$posicaoDoisPontos = strpos($filme['nome'],':');
+$posicaoDoisPontos = strpos($filme -> nome,':');
 
-var_dump(substr($filme['nome'], 0 ,$posicaoDoisPontos));
+var_dump(substr($filme -> nome, 0 ,$posicaoDoisPontos));
 
 var_dump(json_encode($filme)); //"convertor" de um obj em php para json
 var_dump(json_decode('{"nome":"Thor: Ragnarok","ano":2021,"nota":7.8,"genero":"Heroi"}')); // covertor de json para algum tipo varivel em php

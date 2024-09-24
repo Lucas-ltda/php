@@ -13,7 +13,7 @@ class Filme {
         public readonly  string $nome, 
         // readonly nada mais do que indica que propriedade em questão é somente para leitura, fazendo com ela possa ser acessada sem depender de um metodo get
         public readonly int $anoLancamento,
-        public readonly string $genero 
+        public readonly Genero $genero 
         // ao definir um modificador de acesso(private/public) a um parametro no construtor, esse parametro é "promovido" a uma propriedade, funciona SOMENTE COM O METODO CONSTRUTOR
         )
     {

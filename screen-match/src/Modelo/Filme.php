@@ -12,6 +12,11 @@ class Filme extends Titulo {
         // $this -> notas = [];
         parent:: __construct($nome,$anoLancamento,$genero);
     }
+
+    public function duracaoEmMinutos(): int{
+        return $this->duracaoEmMinutos;
+    }
+
     // o metodo construct nada mais é do que um metodo que é chamado de forma automatica sempre que um objeto é instanciado. Não pode definir um tipo de returno já que o retorno dele é o objeto em si
     // com o metodo construct não se faz necessario o uso do metodo set.
 

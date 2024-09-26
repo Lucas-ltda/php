@@ -21,5 +21,7 @@ class Titulo{
 
         return $somaNotas / $quantidadeDeNotas;
     }
-
+    public function duracaoEmMinutos(): int{
+        return 0;
+    }
 }
